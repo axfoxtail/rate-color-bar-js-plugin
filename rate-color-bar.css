@@ -1,20 +1,25 @@
 .rate-color-bar {
-    max-width: 300px;
-    height: 100px;
+    min-width: 100px;
+    min-height: 30px;
     display: block;
     position: relative;
-    padding: 10px;
 }
 
 .rate-color-bar .bar-row {
     display: flex;
 }
 
-.rate-color-bar .bar-wrapper {
+.rate-color-bar .bar-row .bar-container {
+    position: relative;
+    width: -webkit-fill-available;
+}
+
+.rate-color-bar .bar-stick {
     position: relative;
     display: block;
     width: 100%;
-    height: 15px;
+    height: 100%;
+    min-height: 15px;
     background-image: url(img/color-bar.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -22,9 +27,13 @@
 }
 
 .rate-color-bar .bar-target {
-    position: relative;
-    height: 60px;
-    top: -8px;
+    background-image: url(img/target.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    position: absolute;
+    width: 100%;
+    min-height: 60px;
+    top: 0px;
     left: 100%;
     z-index: 100;
     transform: translate(-20px, -10px);

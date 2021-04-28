@@ -6,11 +6,12 @@ function initRateColorBar() {
         console.log('i ', i);
         console.log('a ', a);
         v.innerHTML += '<div class="bar-row">' +
-                            '<div class="min-val">1</div>' +
-                            '<div class="bar-wrapper">' +
-                                '<img class="bar-target" src="img/target.png" alt="" style="left:'+ (25 * (parseFloat(v.dataset.value) - 1)) +'%;" />' +
-                            '</div>' +
-                            '<div class="max-val">5</div>' +
+                            '<div class="min-val">5</div>' +
+                            '<div class="bar-container">' +
+                                '<div class="bar-stick"></div>' +
+                                '<div class="bar-target" alt="" style="left:'+ (25 * (parseFloat(v.dataset.value) - 1)) +'%;"></div>' +
+                            '</div>' + 
+                            '<div class="max-val">1</div>' +
                         '</div>';
     });
 }
